@@ -9,9 +9,6 @@ then back to integers to sum them.
 from functools import reduce
 
 number = str(56)
-list = []
-for i in range(len(number)):
-    list.append(int(number[i]))
-    
-digits_add =reduce(lambda x, y: x + y, list)
+
+digits_add =reduce(lambda x, y: int(x) + int(y), number)
 print(digits_add)
