@@ -12,5 +12,6 @@ list = ['happy' , 'birthday', 'to', 'me']
 # len(x) indicates that the items in list should first be sorted by their lengths
 # with x it indicates that the items in list should be sorted alphabetically as second priority 
 # if there comes a tie
-list.sort(key=lambda x: (len(x), x)) 
-print(list)
+
+ordered_list = sorted( list, key = lambda x : (len(x) , x))
+print(ordered_list)
